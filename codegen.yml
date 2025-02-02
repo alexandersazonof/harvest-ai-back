@@ -1,0 +1,8 @@
+schema: 'https://api.studio.thegraph.com/query/48757/harvest-base/version/latest'
+documents: 'src/**/*.graphql'
+generates:
+  ./src/__generated/graphql.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-graphql-request'

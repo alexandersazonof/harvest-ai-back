@@ -1,0 +1,16 @@
+query Vaults {
+    vaults(
+        where: {
+            tvl_lt: 10000000
+        }
+        first: 10
+        orderBy: tvl
+        orderDirection: desc
+    ) {
+        id
+        name
+        tvl
+        apy
+        timestamp
+    }
+}
